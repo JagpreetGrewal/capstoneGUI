@@ -41,7 +41,9 @@ cd build
 
 Start the local web server by running the following command:
 
-* serve
+```bash
+serve
+```
 
 * Open a web browser and go to http://localhost:5000 to view the app.
 
