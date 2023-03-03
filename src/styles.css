@@ -1,44 +1,35 @@
 .start-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .background-img {
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(3px);
-  }
-  
-  .start-menu-content {
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-  }
-  
-  .time {
-    font-size: 100px;
-    margin-bottom: 0;
-  }
-  
-  .date {
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .start-prompt {
-    font-size: 24px;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.start-menu-content {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+}
+
+.time {
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.date {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.start-prompt {
+  font-size: 24px;
+}
