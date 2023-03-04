@@ -18,7 +18,7 @@ npm install --openssl-legacy-provider
 ```
 
 This will install all the necessary packages listed in the package.json file.
-##Compilation
+## Compilation
 
 To compile this app, run the following command in the root directory of the project:
 
