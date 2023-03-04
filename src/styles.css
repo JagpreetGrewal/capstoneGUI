@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 20px; /* add padding to create space for the border */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +12,33 @@
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
+  border-width: 20px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, #E73725, lightpink);
+  overflow: visible;
 }
+  /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/ /* add a shadow effect */
+  /*border: 20px solid #E73725;*/ /* add a border */
+  /*border-radius: 10px; *//* round the corners */
+
+
+/* .start-menu-content {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+} */
 
 .start-menu-content {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
   color: #fff;
   text-shadow: 2px 2px #000000;
 }
@@ -31,5 +55,10 @@
 }
 
 .start-prompt {
-  font-size: 24px;
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding-right: 70px;
+  text-align: right;
 }

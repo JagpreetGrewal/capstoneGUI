@@ -7,7 +7,12 @@ class App extends React.Component {
     super(props);
     this.state = {
       time: new Date().toLocaleTimeString(),
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleDateString(undefined, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
       prompt: "Slide/Click to start"
     };
   }
