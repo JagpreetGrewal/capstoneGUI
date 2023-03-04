@@ -5,7 +5,7 @@ class StartMenu extends React.Component {
   render() {
     return (
       <div className="start-menu">
-        <img src={this.props.backgroundImg} alt="background" className="background-img" />
+        {/* <img src={this.props.backgroundImg} alt="background" className="background-img" /> */}
         <div className="start-menu-content">
           <h1 className="time">{this.props.time}</h1>
           <h2 className="date">{this.props.date}</h2>

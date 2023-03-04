@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <StartMenu
-          backgroundImg={backgroundImg}
+          // backgroundImg={backgroundImg}
           time={this.state.time}
           date={this.state.date}
           prompt={this.state.prompt}
