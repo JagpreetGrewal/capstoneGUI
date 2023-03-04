@@ -12,7 +12,10 @@ Before you can compile and run this app, you'll need to have the following tools
 
 To install the dependencies required by this app, run the following command in the root directory of the project:
 
-```npm install```
+```
+npm install
+npm install --openssl-legacy-provider
+```
 
 This will install all the necessary packages listed in the package.json file.
 ##Compilation
