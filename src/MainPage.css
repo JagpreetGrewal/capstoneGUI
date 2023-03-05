@@ -55,4 +55,8 @@
   .OutputColumn .OutputBox {
     height: 50%;
   }
+
+  .column-two {
+    width: 40%;
+  }
   
