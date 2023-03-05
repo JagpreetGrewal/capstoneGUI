@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px; /* add padding to create space for the border */
+  width: 97.25%;
+  height: 94.25%;
+  padding: 1px; /* add padding to create space for the border */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +12,7 @@
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
+  background-clip: border-box; /* prevent background from flowing past padding box */
   border-width: 20px;
   border-style: solid;
   border-image-slice: 1;
