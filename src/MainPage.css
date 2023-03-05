@@ -1,0 +1,58 @@
+.MainPage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .SettingsColumn {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .SettingsColumn button {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .ScriptColumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ScriptImage {
+    width: 100%;
+    height: 20%;
+    object-fit: contain;
+  }
+  
+  .ScriptButtons {
+    margin-top: 10px;
+  }
+  
+  .ScriptButtons button {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .OutputBox {
+    width: 100%;
+    height: 30%;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  
+  .OutputColumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .OutputColumn .OutputBox {
+    height: 50%;
+  }
+  
