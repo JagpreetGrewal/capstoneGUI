@@ -1,6 +1,8 @@
 import React from "react";
 import StartMenu from "./StartMenu";
 import backgroundImg from "./background.jpg";
+import { Switch, Route} from "react-router-dom";
+import MainPage from "./MainPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,13 +36,19 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <StartMenu
-          // backgroundImg={backgroundImg}
-          time={this.state.time}
-          date={this.state.date}
-          prompt={this.state.prompt}
-        />
-      </div>
+      <Switch>
+        <Route path="/MainPage">
+          <MainPage />
+        </Route>
+        <Route path="/">
+          <StartMenu
+            time={this.state.time}
+            date={this.state.date}
+            prompt={this.state.prompt}
+          />
+        </Route>
+      </Switch>
+    </div>
     );
   }
 }

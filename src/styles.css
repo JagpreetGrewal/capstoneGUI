@@ -17,6 +17,8 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom right, #E73725, lightpink);
   overflow: visible;
+  transition: transform 0.5s ease;
+  transform: translateX(0);
 }
   /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/ /* add a shadow effect */
   /*border: 20px solid #E73725;*/ /* add a border */

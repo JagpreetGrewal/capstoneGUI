@@ -15,6 +15,7 @@ To install the dependencies required by this app, run the following command in t
 ```
 npm install
 npm install --openssl-legacy-provider
+npm i react-router-dom@5.2.0
 ```
 
 This will install all the necessary packages listed in the package.json file.
