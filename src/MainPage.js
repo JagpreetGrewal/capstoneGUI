@@ -15,21 +15,21 @@ class MainPage extends React.Component {
 
   handleExample1Click = () => {
     // Use fetch to call example1.py and get its output
-    fetch("example1.py")
+    fetch("python3 example1.py")
       .then(response => response.text())
       .then(output => this.setState({ example1Output: output }));
   };
 
   handleExample2Click = () => {
     // Use fetch to call example2.py and get its output
-    fetch("example2.py")
+    fetch("python3 example2.py")
       .then(response => response.text())
       .then(output => this.setState({ example2Output: output }));
   };
 
   handleExample3Click = () => {
     // Use fetch to call example3.py and get its output
-    fetch("example3.py")
+    fetch("python3 example3.py")
       .then(response => response.text())
       .then(output => this.setState({ example3Output: output }));
   };

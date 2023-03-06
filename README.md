@@ -13,6 +13,7 @@ Before you can compile and run this app, you'll need to have the following tools
 To install the dependencies required by this app, run the following command in the root directory of the project:
 
 ```
+pip install flask
 npm install
 npm install --openssl-legacy-provider
 npm i react-router-dom@5.2.0
