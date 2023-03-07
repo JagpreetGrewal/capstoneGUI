@@ -74,14 +74,24 @@ const MainPage = () => {
           {/* <button onClick={this.handleClick}>Example 2</button> */}
           {/* <button onClick={this.handleClick}>Example 3</button> */}
         </div>
-        <div className="OutputBox">{example1Output}</div>
+        {/* <div className="OutputBox">{example1Output}</div> */}
       </div>
-      <div className="ScriptColumn">
-        {/* <img src={Cam} alt="webcam"></img> */}
+      {/* <div className="ScriptColumn"> */}
+        {/* <video src={Cam} alt="webcam"></video> */}
         <Cam />
         {/* <video src={videoSrc} autoPlay /> */}
         {/* <button onClick={handleExample1Click}>Example 2</button> */}
-      </div>
+      {/* </div> */}
+
+      {/* <Grid item xs={9}>
+      <Container>
+        <iframe
+            src={'/video_feed'}
+            allow="accelerometer, autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen>
+        </iframe>
+    </Container>
+    </Grid> */}
     </div>
   );
   // }

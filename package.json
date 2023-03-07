@@ -2,9 +2,11 @@
   "name": "start-menu",
   "version": "1.0.0",
   "description": "A React-based start menu for an application",
+  "proxy":"http://localhost:5000/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "start-backend": "cd src && python3 -m flask run --no-debugger",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

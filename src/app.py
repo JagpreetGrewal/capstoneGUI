@@ -4,7 +4,8 @@ import cv2
 import numpy as np
 from flask_cors import CORS
 
-# run using $ python3 -m flask run
+# run using $ python3 -m flask run in src folder
+# alternatively $ npm run start-backend in root folder
 
 app = Flask(__name__)
 CORS(app)
@@ -49,6 +50,8 @@ def example3():
 
 @app.route('/video_feed')
 def video_feed():
+    # runs human tracking algorithm
+    # output at http://127.0.0.1:5000/video_feed
     return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
