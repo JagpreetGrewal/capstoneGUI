@@ -3,6 +3,7 @@ import axios from "axios";
 import example1Output from "./example1Output.txt";
 import "./MainPage.css";
 import Net from "./Net.png"
+import Cam from "./Cam"
 
 // class MainPage extends React.Component {
 //   constructor(props) {
@@ -14,18 +15,31 @@ import Net from "./Net.png"
 //     };
 //   }
 
-const MainPage = () => {
-  const [example1Output, setExample1Output] = useState("");
 
-  const handleClick = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/example1');
-      const output = await response.text();
-      setExample1Output(output);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+
+const MainPage = () => {
+
+  const [videoSrc, setVideoSrc] = useState("");
+
+  // const handleExample1Click = () => {
+  //   fetch("http://localhost:5000/video_feed", {
+  //     method: 'GET',
+  //   })
+  //   .then((response) => {
+  //     if (!response.ok) {
+  //       throw new Error("Network response was not ok");
+  //     }
+  //     return response.blob();
+  //   })
+  //   .then((blob) => {
+  //     const videoUrl = URL.createObjectURL(blob);
+  //     setVideoSrc(videoUrl);
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error fetching video stream:", error);
+  //   });
+  // };
+
 
   // handleExample2Click = () => {
   //   // Use fetch to call example2.py and get its output
@@ -43,32 +57,34 @@ const MainPage = () => {
 
   // render() {
 
-    return (
-      <div className="MainPage">
-        <div className="SettingsColumn">
-          <button>Setting 1</button>
-          <button>Setting 2</button>
-          <button>Setting 3</button>
-          <button>Setting 4</button>
-          <button>Setting 5</button>
-        </div>
-        <div className="ScriptColumn">
-          <img src={Net} alt="Script Image" className="ScriptImage" />
-          <div className="ScriptButtons">
-            <p>Output should be here</p>
-            <button onClick={handleClick}>Example 1</button>
-            {/* <button onClick={this.handleClick}>Example 2</button> */}
-            {/* <button onClick={this.handleClick}>Example 3</button> */}
-          </div>
-          <div className="OutputBox">{example1Output}</div>
-        </div>
-        <div className="OutputColumn">
-          <div className="OutputBox">{example1Output}</div>
-          {/* <div className="OutputBox">{this.state.example3Output}</div> */}
-        </div>
+  return (
+    <div className="MainPage">
+      <div className="SettingsColumn">
+        <button>Setting 1</button>
+        <button>Setting 2</button>
+        <button>Setting 3</button>
+        <button>Setting 4</button>
+        <button>Setting 5</button>
       </div>
-    );
+      <div className="ScriptColumn">
+        <img src={Net} alt="Script Image" className="ScriptImage" />
+        <div className="ScriptButtons">
+          <p>Output should be here</p>
+          {/* <button onClick={handleClick}>Example 1</button> */}
+          {/* <button onClick={this.handleClick}>Example 2</button> */}
+          {/* <button onClick={this.handleClick}>Example 3</button> */}
+        </div>
+        <div className="OutputBox">{example1Output}</div>
+      </div>
+      <div className="ScriptColumn">
+        {/* <img src={Cam} alt="webcam"></img> */}
+        <Cam />
+        {/* <video src={videoSrc} autoPlay /> */}
+        {/* <button onClick={handleExample1Click}>Example 2</button> */}
+      </div>
+    </div>
+  );
   // }
-}
+};
 
 export default MainPage;

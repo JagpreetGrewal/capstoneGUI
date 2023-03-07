@@ -14,6 +14,7 @@ To install the dependencies required by this app, run the following command in t
 
 ```
 pip install flask
+pip install -U flask-cors
 npm install
 npm install --openssl-legacy-provider
 npm i react-router-dom@5.2.0

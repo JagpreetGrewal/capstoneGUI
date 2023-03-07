@@ -2,10 +2,12 @@ from flask import Flask, Response
 import subprocess
 import cv2
 import numpy as np
+from flask_cors import CORS
 
 # run using $ python3 -m flask run
 
 app = Flask(__name__)
+CORS(app)
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 camera = cv2.VideoCapture(0)
