@@ -1,3 +1,5 @@
 #!/bin/bash
+gnome-terminal -x npm run start-backend &
+sleep 2
 npm run build
-serve -s build
+gnome-terminal -x serve -s build
